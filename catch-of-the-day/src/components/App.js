@@ -10,7 +10,6 @@ class App extends React.Component {
             <div className='catch-of-the-day'>
                 <div className='menu'>
                     <Header tagline='Fresh Seafood Market' myName='Melissa' />
-                    {/* the entries above can now be used as props anyplace in the header page.  If you use the dev tools in the browser you can actually see that if you click on the header component what props are avail. */}
                 </div>
                 <Inventory />
                 <Order />
@@ -20,3 +19,7 @@ class App extends React.Component {
 }
 
 export default App
+
+// the entries in the Header tag above can now be used as props anyplace in the header page.  If you use the dev tools in the browser you can actually see that if you click on the header component what props are avail.
+// <Header tagline='Alternate header line' />
+// Because of the way react works you can call the Header page again and change what the tagline says and it will render both Headers but with different words due to props
