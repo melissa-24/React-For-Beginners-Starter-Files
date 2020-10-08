@@ -95,3 +95,6 @@ export function getFunName() {
 
   return `${rando(adjectives)}-${rando(adjectives)}-${rando(nouns)}`;
 }
+
+
+// In the helper.js file you don't use export default  just export but that is because you don't usually want to use the whole helper.js file but just part of it.  Lke just the getFunName part so why import the whole thing like we do with react when we can just import what we want to use on that particular page
